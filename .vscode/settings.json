@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 14,
+    "editor.fontSize": 20,
     "files.autoSave": "afterDelay",
     "editor.fontWeight": "400",
     "editor.fontFamily": "Dank Mono, Lws, Operator Mono",
@@ -67,7 +67,7 @@
     "git.enabled": true,
     "editor.minimap.enabled": false,
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": true,
         "scminput": false

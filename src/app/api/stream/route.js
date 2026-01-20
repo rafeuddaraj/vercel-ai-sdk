@@ -11,6 +11,10 @@ export const POST = async (req) => {
             model: openai("gpt-4.1-nano"),
             prompt
         })
+        result.usage.then(usage => {
+            console.log(usage);
+        })
+
         return result.toUIMessageStreamResponse();
     } catch (err) {
         console.log("streamming error", err);

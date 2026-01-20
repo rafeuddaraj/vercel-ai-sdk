@@ -1,5 +1,4 @@
-import ChatApp from "@/components/ChatApp";
-
+import ChatApp from "@/components/text-response/ChatApp";
 
 export default function page() {
   return (

@@ -1,7 +1,7 @@
 "use client"
 import { useRef, useState } from "react";
 
-export default function ChatBox() {
+export default function ChatApp() {
     const [messages, setMessages] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [input, setInput] = useState("");

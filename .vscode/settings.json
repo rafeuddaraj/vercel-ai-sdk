@@ -43,6 +43,7 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
+    "editor.hover.enabled": "on",
     "html.autoClosingTags": true,
     "javascript.autoClosingTags": true,
     "typescript.autoClosingTags": true,

@@ -46,13 +46,13 @@ export default function page() {
                         <>
                             {message.role === "assistant" ? (
                                 <div key={message.id} className="flex items-start gap-3">
-                                    <div className="grid h-9 w-9 place-items-center rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-white">
+                                    <div className="grid h-9 w-9 place-items-center rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-white whitespace-pre-wrap">
                                         <span className="text-xs font-semibold">AI</span>
                                     </div>
 
                                     <div className="max-w-[92%] rounded-2xl border border-slate-800/70 bg-slate-900/40 p-4">
                                         {message.parts.map((part, i) => (
-                                            <p key={`${message.id}-${i}`} className="text-sm leading-relaxed">
+                                            <p key={`${message.id}-${i}`} className="text-sm leading-relaxed whitespace-pre-wrap">
                                                 {part.text}
                                             </p>
                                         ))}

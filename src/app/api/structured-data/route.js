@@ -38,7 +38,7 @@ If rules are violated, respond ONLY with this text:
             ],
             temperature: 0.2,
             output: Output.object({
-                schema: recipeSchema
+                schema: recipeSchema,
             })
         });
 

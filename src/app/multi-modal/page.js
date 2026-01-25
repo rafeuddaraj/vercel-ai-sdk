@@ -19,6 +19,8 @@ export default function page() {
     const handleSubmit = (e) => {
         try {
             sendMessage({ text: input, files })
+            console.log(files);
+
             setInput("");
             setFiles(null);
         }
@@ -72,9 +74,13 @@ export default function page() {
                                                     </p>;
                                                 case "file":
                                                     if (part.mediaType.startsWith("image/")) {
-                                                        return <Image width={200} height={200}
+                                                        return <Image key={part.url} width={200} height={200}
                                                             alt={part.filename}
                                                             src={part.url} />
+                                                    } else if (part.mediaType.startsWith("application/pdf")) {
+                                                        return <iframe key={part.url} src={part.url} height={500} width={600}>
+
+                                                        </iframe>
                                                     }
                                                     return null
                                             }
